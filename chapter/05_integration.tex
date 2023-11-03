@@ -30,7 +30,7 @@ Diese Parameter können als Anleitung betrachtet werden, wie die eigene Organisa
 
 \begin{figure}[htb]
     \centering
-    \includegraphics[width=0.95\textwidth]{graphics/DDO_design.png}
+    \includegraphics[width=0.8\textwidth]{graphics/DDO_design.png}
     \caption{Gestaltungsparameter einer datengesteuerten Organisation}
     \label{fig:DDOs design}
 \end{figure}
@@ -45,7 +45,38 @@ Wird die technische Perspektive betrachtet, werden dessen Komponenten der Aufgab
 Beispielhaft könnte eine Organisation durch ihre Struktur und Akteure beschreibende-, prädiktive und vorhersagende Analysen erstellen, um Prozesse zu verbessern und Entscheidungen zu unterstützen.
 Speicherorte für Daten und Software können z. B. hybrid für jedes Datenteam einer Fachabteilung und für den gemeinsamen Austausch mehrerer Datenteams eingerichtet werden.
 
-\section{Experiment Evolution Model (Microsoft)}
+\section{Experiment Evolution Model}
 
-\section{Conceptual requirements}
-\section{DI / DS Integration Framework}
+Ein weiteres Vorgehensmodell durch \Citeauthor*[][]{Fabijan.2017} beschreibt den Transformationsprozess von adhoc Analysen zu skalierten kontrollierten Experimenten in Organisationen. \footcite[Vgl.][S. 5]{Fabijan.2017}
+Das Experiment Evolution Modell verdeutlicht die Evolutionsphasen datengesteuerter Entwicklung in Unternehmen und Abteilungen.
+Zur Anwendung des Modells sind Voraussetzungen zu erfüllen, welche folgend thematisiert werden.
+
+Eine Anwendung setzt in soweit Fähigkeiten der Data Science voraus, sodass Produktstatistiken evaluiert werden können.
+Die Fähigkeiten umfassen das Verständnis von Hypothesentests, Randomisierung, Stichprobengrößen und die Berechnung von Konfidenzintervallen. %\footcite[Vgl.][S. 6]{Fabijan.2017}
+% Falls derartige Fähigkeiten nicht vorliegen, können Onlineressourcen die Weiterentwicklung der Mitarbeiter unterstützen.
+Die Kombination dieser Fähigkeiten mit Domänenwissen ermöglicht die Generierung und Evaluation erster Produkthypothesen.
+Als zweite Anforderung wird die Verfügbarkeit eines Zugangs zu Daten der Produktverwendung vorausgesetzt.
+% Je nach Domäne können dabei komplizierte Fragestellungen hinsichtlich rechtlicher sowie technischer Herausforderungen aufkommen.
+
+Die im Modell abgebildete Evolution erfolgt in den drei Dimensionen Technisch, Organisatorisch und Geschäftlich. 
+Jede Dimension folgt den vier Phasen \textit{Krabbeln, Gehen, Rennen} und \textit{Fliegen}.
+Zu Beginn der ersten Phase finden in der technischen Dimensionen der Aufbau von Logging-Systemen und erste manuelle produktspezifische Analysen von Data Science Teams statt.
+Die Geschäftsdimension beinhaltet die Definition von unternehmensweiten Evaluationskriterien in Verbindung mit den langfristigen Geschäftszielen.
+Während der Phase des \textit{Gehens} werden in der technischen Dimension Metriken entwickelt, anhand dessen Eventdaten aggregiert betrachtet werden können.
+Diese Phase erzeugt den Bedarf einer übergreifenden Analyseplattform durch das Wachstum an Experimentarten und Anwendungen. 
+In der Organisation bauen während dieser Phase Data Science Experten zunehmend Wissen für einzelne Produkte auf, und Daten und Vorgehensweisen werden weitreichend geteilt.
+Die Geschäftsdimension entwickelt sich mittels Validierung bestehender und Entwicklung neuer Evaluationskriterien z. B. hinsichtlich der Datenqualität.
+Zur Phase des \textit{Rennens} werden in der technischen Dimension Analyseplattformen skaliert und Experimente für mehrere Produktteams ausgeführt, um einen Fokus auf nahverwandte Metriken der Geschäftsziele zu setzen.
+Organisatorisch übernehmen die Produktteams dabei volle Verantwortung und für ihre Ergebnisse, werden aber noch fachlich von Data Science Experten begleitet.
+In der Geschäftsdimension werden bisherige Qualitäts- und Leistungskriterien verfeinert und kombiniert, um Ergebnisse zu standardisieren und wenige klare Ziele zu fokussieren.
+Die letzte Phase des \textit{Fliegens} fokussiert in der technischen Dimension die Standardisierung der Metrikentwicklung, Erweiterung der Plattformautomatisierung und Aufnahme von Daten zu jeder Softwareänderung.
+Die Evolution der Organisation umfasst zu diesem Zeitpunkt die autonome Durchführung von Analysen durch Produktteams und Entwicklung von Plattformen durch zentrale Data Science Teams.
+In der Geschäftsdimension sind zu dieser Phase selten Änderungen an definierten Evaluationskriterien und deren Entwicklungsprozessen vorzunehmen.
+
+Das Modell lässt sich zusammenfassend wie folgt in Abbildung 5.2 darstellen.
+\begin{figure}[htb]
+    \centering
+    \includegraphics[width=0.68\textwidth]{graphics/EEM model.png}
+    \caption{Gestaltungsparameter einer datengesteuerten Organisation}
+    \label{fig:EEM model}
+\end{figure}

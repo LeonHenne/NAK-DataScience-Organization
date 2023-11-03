@@ -1,7 +1,7 @@
 \chapter[Integrationsprozesse]{Integrationsprozesse}
 
 Nach den behandelten Herausforderungen werden in diesem Kapitel Möglichkeiten und Vorgehensmodelle zur Integration von Data Science in Organisationen thematisiert.
-Dazu werden insgesamt fünf Modelle der Forschungsliteratur dargelegt.
+Dazu werden insgesamt drei Modelle der Forschungsliteratur dargelegt.
 
 \section{CSPG Framework}
 
@@ -23,46 +23,29 @@ Zur Bewältigung dieser Aufgabe sind die folgenden vier Parameter in der Organis
     \item Ressourcenbereitstellung für Daten-, Analyse- und Managementprozesse.
 \end{itemize}
 
-% insert table summary of CSPG
-% \begin{table}[htb]
-%     \centering
-%     \begin{tabular}{>{\raggedright\arraybackslash}m{2.5cm} >{\raggedright\arraybackslash}m{5cm} >{\raggedright\arraybackslash}m{5cm}}
-%     \toprule
-%      & \textbf{Department/Unit Level} & \textbf{Organizational Level} \\ \midrule
-%     \textbf{Analytics Culture} & Sind Big Data und Analytics als organisatorische Funktion betrachtet und gibt es eine Big Data/Analytics-Abteilung oder -Einheit, um diese Funktion zu unterstützen? & Sind Big Data und Analytics in die Unternehmensstrategie integriert? Gibt es einen Senior Leader, der sich für Big Data und Analytics einsetzt? Werden interne und externe Daten, die Wert schaffen können, genutzt? \\ \midrule
-%     \textbf{Analytics Staff} & Hat die Analytics-Abteilung die richtigen Personen mit dem richtigen Grad an analytischer Spezialisierung, IT-Wissen und Geschäftswissen? & Gibt es Analytikteammitglieder in den richtigen Abteilungen innerhalb der Organisation und gibt es eine kritische Masse an analytischem Talent? Wenn nicht, muss das analytische Personal neu ausbalanciert oder die Zentralisierung/Dezentralisierung des Analysepersonals entsprechend angepasst werden. \\ \midrule
-%     \textbf{Analytics Processes} & Hat die Analyseabteilung Analyseprozesse eingerichtet, um Analysemodelle zu erstellen, Analysemodelle einzusetzen und deren Geschäftsauswirkungen zu messen? & Hat die Organisation die analytischen Prozesse eingerichtet, um analytische Möglichkeiten auszuwählen, Daten für die Datenwissenschaftler bereitzustellen, analytische Modelle zu erstellen, analytische Modelle einzusetzen und den generierten Geschäftswert zu messen? Gibt es eine analytische Governance-Struktur, um die richtigen analytischen Prozesse zu unterstützen und zu koordinieren? \\ \bottomrule
-%     \end{tabular}
-%     \caption{Vergleich von Analytics auf Abteilungs-/Einheitsebene und organisatorischer Ebene}
-% \end{table}
-
 \section{Design Parameters}
 
 Durch die Arbeit von \Citeauthor*{JanineAdinaHagen.2020} konnten die Gestaltungsparameter einer datengesteuerten Organisation ermittelt werden.
 Diese Parameter können als Anleitung betrachtet werden, wie die eigene Organisation in verschiedenen Aspekten zu gestalten ist.
-Folgende Tabelle zeigt die Gestaltungsparameter organisiert nach Komponenten, Dimensionen und konkreter Charakteristika:
 
-% Please add the following required packages to your document preamble:
-% \usepackage{multirow}
-% \begin{table}[]
-%     \begin{tabular}{|cc|c|cccccccc|}
-%     \hline
-%     \multicolumn{2}{|c|}{\textbf{\begin{tabular}[c]{@{}c@{}}Subsystem/ \\  component\end{tabular}}} & \textbf{\begin{tabular}[c]{@{}c@{}}Design \\  dimension\end{tabular}} & \multicolumn{8}{c|}{\textbf{Characteristic}} \\ \hline
-%     \multicolumn{1}{|c|}{\multirow{7}{*}{Social}} & \multirow{6}{*}{\begin{tabular}[c]{@{}c@{}}Struc- \\  ture\end{tabular}} & \textit{\begin{tabular}[c]{@{}c@{}}Anchoring of \\  data experts\end{tabular}} & \multicolumn{2}{c|}{Central} & \multicolumn{4}{c|}{Hybrid} & \multicolumn{2}{c|}{Decentral} \\ \cline{3-11} 
-%     \multicolumn{1}{|c|}{} &  & \textit{\begin{tabular}[c]{@{}c@{}}Reporting \\  line\end{tabular}} & \multicolumn{2}{c|}{Technology} & \multicolumn{4}{c|}{Dual} & \multicolumn{2}{c|}{Business} \\ \cline{3-11} 
-%     \multicolumn{1}{|c|}{} &  & \textit{\begin{tabular}[c]{@{}c@{}}Horizontal \\  linkage\end{tabular}} & \multicolumn{1}{c|}{\begin{tabular}[c]{@{}c@{}}Simplified \\  examples\end{tabular}} & \multicolumn{1}{c|}{\begin{tabular}[c]{@{}c@{}}Meeting \\  routines\end{tabular}} & \multicolumn{1}{c|}{\begin{tabular}[c]{@{}c@{}}Joint \\  processes\end{tabular}} & \multicolumn{2}{c|}{\begin{tabular}[c]{@{}c@{}}Voluntary \\ works\end{tabular}} & \multicolumn{1}{c|}{Training} & \multicolumn{1}{c|}{Integrator} & Events \\ \cline{3-11} 
-%     \multicolumn{1}{|c|}{} &  & \textit{\begin{tabular}[c]{@{}c@{}}Collaboration \\  initiative\end{tabular}} & \multicolumn{2}{c|}{Business team} & \multicolumn{2}{c|}{Data and business team} & \multicolumn{2}{c|}{\begin{tabular}[c]{@{}c@{}}Data team\\ (business need-based)\end{tabular}} & \multicolumn{2}{c|}{\begin{tabular}[c]{@{}c@{}}Data team \\  (data-based)\end{tabular}} \\ \cline{3-11} 
-%     \multicolumn{1}{|c|}{} &  & \textit{\begin{tabular}[c]{@{}c@{}}Collaboration \\  mode\end{tabular}} & \multicolumn{2}{c|}{Prototyping} & \multicolumn{4}{c|}{Structured backlog} & \multicolumn{2}{c|}{Occasional use cases} \\ \cline{3-11} 
-%     \multicolumn{1}{|c|}{} &  & \textit{\begin{tabular}[c]{@{}c@{}}Control \\  mechanisms\end{tabular}} & \multicolumn{1}{c|}{\begin{tabular}[c]{@{}c@{}}Business \\  impact\end{tabular}} & \multicolumn{1}{c|}{Back testing} & \multicolumn{1}{c|}{Utilization} & \multicolumn{3}{c|}{\begin{tabular}[c]{@{}c@{}}Data vs. human \\ tournament\end{tabular}} & \multicolumn{2}{c|}{\begin{tabular}[c]{@{}c@{}}Transformation \\  KPIs\end{tabular}} \\ \cline{2-11} 
-%     \multicolumn{1}{|c|}{} & Actors & \textit{Roles} & \multicolumn{2}{c|}{Data-oriented} & \multicolumn{4}{c|}{Hybrid} & \multicolumn{2}{c|}{Business-oriented} \\ \hline
-%     \multicolumn{1}{|c|}{\multirow{3}{*}{Technical}} & \multirow{2}{*}{Tasks} & \textit{Data tasks} & \multicolumn{1}{c|}{\begin{tabular}[c]{@{}c@{}}Descriptive \\  analysis\end{tabular}} & \multicolumn{1}{c|}{\begin{tabular}[c]{@{}c@{}}Predictive \\  analysis\end{tabular}} & \multicolumn{1}{c|}{\begin{tabular}[c]{@{}c@{}}Prescriptive \\  analysis\end{tabular}} & \multicolumn{2}{c|}{Tools} & \multicolumn{1}{c|}{\begin{tabular}[c]{@{}c@{}}Infra- \\  structure\end{tabular}} & \multicolumn{1}{c|}{Visualization} & Dashboards \\ \cline{3-11} 
-%     \multicolumn{1}{|c|}{} &  & \textit{\begin{tabular}[c]{@{}c@{}}Business \\  tasks\end{tabular}} & \multicolumn{1}{c|}{\begin{tabular}[c]{@{}c@{}}Process \\  improvement\end{tabular}} & \multicolumn{2}{c|}{\begin{tabular}[c]{@{}c@{}}Decision-\\ making\end{tabular}} & \multicolumn{2}{c|}{New insights} & \multicolumn{2}{c|}{\begin{tabular}[c]{@{}c@{}}Products / \\  Services\end{tabular}} & Standardization \\ \cline{2-11} 
-%     \multicolumn{1}{|c|}{} & \begin{tabular}[c]{@{}c@{}}Tech- \\  nology\end{tabular} & \textit{\begin{tabular}[c]{@{}c@{}}Data \\  repository\end{tabular}} & \multicolumn{2}{c|}{United} & \multicolumn{4}{c|}{Hybrid} & \multicolumn{2}{c|}{Dispersed} \\ \hline
-%     \end{tabular}
-%     \caption{undefined}
-%     \label{undefined}
-% \end{table}
+\begin{figure}[htb]
+    \centering
+    \includegraphics[width=0.95\textwidth]{graphics/DDO_design.png}
+    \caption{Gestaltungsparameter einer datengesteuerten Organisation}
+    \label{fig:DDOs design}
+\end{figure}
+
+Die obige Tabelle zeigt die Gestaltungsparameter organisiert nach Komponenten, Dimensionen und konkreter Charakteristika. \footcite[Vgl.][S. 5]{JanineAdinaHagen.2020}
+Eine wichtige Gestaltungskomponente betrachtet die soziale Perspektive auf die Struktur und die Akteure der datengesteuerten Organisation.
+Die Struktur der Organisation kann durch die Parameter \textit{Expertenorganisation, Berichtslinie, horizontale Verknüpfung, Kooperationsinitiative, Kooperationsmodus} und \textit{Kontrollmechanismus} beeinflusst werden.
+Eine mögliche Ausprägung dieser Parameter umfasst z. B. zum einen dezentrale Data Science Experten, eine Berichtslinie zur Fachabteilung sowie regelmäßige Meetings und Events der Data Science Experten.
+Zum anderen werden z. B. durch die Datenexperten die Zusammenarbeiten mittels strukturiertem Backlog initiiert und anhand des Geschäftsmehrwerts evaluiert.
+In dieser Struktur könnten dann die Akteure z. B. hybrid, also datenorientiert sowie geschäftsorientiert gestaltet werden.
+Wird die technische Perspektive betrachtet, werden dessen Komponenten der Aufgaben und Technologien durch die Parameter \textit{Datenaufgaben, Geschäftsaufgaben} und \textit{Datenrepository} bestimmt.
+Beispielhaft könnte eine Organisation durch ihre Struktur und Akteure beschreibende-, prädiktive und vorhersagende Analysen erstellen, um Prozesse zu verbessern und Entscheidungen zu unterstützen.
+Speicherorte für Daten und Software können z. B. hybrid für jedes Datenteam einer Fachabteilung und für den gemeinsamen Austausch mehrerer Datenteams eingerichtet werden.
 
 \section{Experiment Evolution Model (Microsoft)}
+
 \section{Conceptual requirements}
 \section{DI / DS Integration Framework}
